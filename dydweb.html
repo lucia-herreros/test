@@ -1,0 +1,243 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icon.png" type="image/png">
+        <!-- Enlace al CSS de Bootstrap desde CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Uso una hoja de estilos personal para personalizar colores -->
+        <link rel="stylesheet" href="estilos.css">
+        <title>Materias</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+            <!-- Barra de navegación responsive Bootstrap -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Cuatrimestre 2025</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-auto">
+                      <a class="nav-link menu" href="index.html">Home</a>
+                      <a class="nav-link active" id="activo" aria-current="page" href="materias.html">Materias</a>
+                      <a class="nav-link menu" href="avisos.html">Avisos</a>
+                      <a class="nav-link menu" href="sobremi.html">Sobre mí</a>
+                      <a class="nav-link menu" href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="d-flex ms-auto align-items-center">
+                        <button id="botonTema" class="btn btn-link text-light fs-4" title="Cambiar tema">
+                            <i class="bi bi-moon-stars-fill"></i> <!-- ícono por defecto: luna -->
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- Título de la página -->
+            <h1>Diseño y Desarrollo Web</h1>
+        </header>
+        <main class="container flex-grow-1">
+            <!-- Contenido principal -->
+            <div class="container">
+                <!-- Diseño grid con Bootstrap -->
+                <div class="row">
+                    <!-- Primera columna -->
+                    <div class="col-12 col-md-6">
+                        <!-- Primer elemento de la columna -->
+                        <div>
+                        <h2>Fechas de exámenes</h2>
+                        <table class="table table-bordered"> 
+                            <tr>
+                                <th>Exámen</th>
+                                <th>Fecha</th>
+                            </tr>
+                            <tr>
+                                <td>Primer parcial</td>
+                                <td>25 de abril</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo parcial</td>
+                                <td>13 de junio</td>
+                            </tr>
+                            <tr>
+                                <td>Recuperatorio/Final adelantado</td>
+                                <td>4 de julio</td>
+                            </tr>
+                            <tr>
+                                <td>Final regular</td>
+                                <td>18 de julio</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <!-- Segundo elemento de la columna -->
+                        <div>
+                        <h2>Bibliografía</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com" target="_blank" class="enlace" title="W3 School">W3 Schools</a>
+                            </li>
+                            <li>
+                                <a href="https://www.aluracursos.com/blog/github-pages" class="enlace" target="_blank" title="Cómo activar un proyecto en GitHub">Cómo activar un proyecto en GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://agenciaciscar.com/estructura-de-un-sitio-web/" class="enlace" target="_blank" title="Estructura de un sitio web">Estructura de un sitio web</a>
+                            </li>
+                            <li>
+                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="enlace" target="_blank" title="Bootstrap">Docs de Bootstrap</a>
+                            </li>
+                            <li>
+                                <a href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/" class="enlace" target="_blank" title="Bootstrap Sticky Footer">Bootstrap Sticky Footer</a>
+                            </li>
+                            <li>
+                                <a href="https://javascript.info/" class="enlace" target="_blank" title="Javascript">Javascript</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <!-- Segunda columna -->
+                    <div class="col-12 col-md-6">
+                    <div class="row">
+                        <h2>Actividades UVA</h2>
+                        <!-- Primera columna interna -->
+                        <div class="col d-flex flex-column">
+                        <!-- Card UVA 1 -->
+                            <div class="card flex-fill mb-4">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">UVA 1</h3>
+                                    <div class="contenido d-flex flex-column justify-content-center flex-grow-1">
+                                            <ul>
+                                            <li>
+                                            <h4>TP 1</h4>
+                                            <ul>
+                                                <li><a href="https://lucia-herreros.github.io/UVA1TP1/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA1TP1.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <h4>TP 2</h4>
+                                            <ul>
+                                                <li><a href="https://lucia-herreros.github.io/UVA1TP2/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA1TP2.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <h4>TP 3</h4>
+                                            <ul>
+                                                <li><a href="https://lucia-herreros.github.io/UVA1TP3/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA1TP3.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>  
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card UVA 3 -->
+                            <div class="card flex-fill mb-4">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">UVA 3</h3>
+                                    <div class="contenido d-flex flex-column justify-content-center flex-grow-1">
+                                        <ul>
+                                            <li>
+                                            <h4>TP 1</h4>
+                                            <ul>
+                                                <li><a href="https://lucia-herreros.github.io/UVA3TP1/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA3TP1.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <h4>TP 2</h4>
+                                            <ul>
+                                                <li><a href="https://github.com/lucia-herreros/UVA3TP2.git" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA3TP2.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                            <h4>TP 3</h4>
+                                            <ul>
+                                                <li><a href="https://github.com/lucia-herreros/UVA3TP2.git" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/UVA3TP2.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Segunda columna interna -->
+                        <div class="col d-flex flex-column">
+                            <!-- Card UVA 2 -->
+                            <div class="card flex-fill mb-4">
+                                <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">UVA 2</h3>
+                                <div class="contenido d-flex flex-column justify-content-center flex-grow-1">
+                                    <ul>
+                                        <li>
+                                        <h4>TP 1</h4>
+                                        <ul>
+                                            <li><a href="https://lucia-herreros.github.io/UVA2TP1/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                            <li><a href="https://github.com/lucia-herreros/UVA2TP1.git" class="enlace" target="_blank">Repositorio</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <h4>TP 2</h4>
+                                        <ul>
+                                            <li><a href="https://lucia-herreros.github.io/UVA2TP2/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                            <li><a href="https://github.com/lucia-herreros/UVA2TP2.git" class="enlace" target="_blank">Repositorio</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <h4>TP 3</h4>
+                                        <ul>
+                                            <li><a href="https://lucia-herreros.github.io/UVA2TP3/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                            <li><a href="https://github.com/lucia-herreros/UVA2TP3.git" class="enlace" target="_blank">Repositorio</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <h4>TP 4</h4>
+                                        <ul>
+                                            <li><a href="https://lucia-herreros.github.io/UVA2TP4/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                            <li><a href="https://github.com/lucia-herreros/UVA2TP4.git" class="enlace" target="_blank">Repositorio</a></li>
+                                        </ul>
+                                        </li>  
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>    
+
+                            <!-- Card UVA 4 -->
+                            <div class="card flex-fill mb-4">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">UVA 4</h3>
+                                    <div class="contenido d-flex flex-column justify-content-center flex-grow-1">
+                                        <ul>
+                                            <li>
+                                            <h4>TP 1</h4>
+                                            <ul>
+                                                <li><a href="https://chistes-luciaherreros.netlify.app/" class="enlace" target="_blank">Sitio desplegado</a></li>
+                                                <li><a href="https://github.com/lucia-herreros/TPUVA4.git" class="enlace" target="_blank">Repositorio</a></li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-3 mt-3 flex-shrink-0">
+            <p>Curso: Diseño y Desarrollo Web (15130)</p>
+            <p>Profesora: Patricia Litovicius</p>
+        </footer>
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

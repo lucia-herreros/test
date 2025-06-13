@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icon.png" type="image/png">
+        <!-- Enlace al CSS de Bootstrap desde CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Uso una hoja de estilos personal para personalizar colores -->
+        <link rel="stylesheet" href="estilos.css">
+        <title>Home</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+            <!-- Barra de navegación responsive Bootstrap -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Cuatrimestre 2025</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-auto">
+                      <a class="nav-link active" id="activo" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link menu" href="materias.html">Materias</a>
+                      <a class="nav-link menu" href="avisos.html">Avisos</a>
+                      <a class="nav-link menu" href="sobremi.html">Sobre mí</a>
+                      <a class="nav-link menu" href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="d-flex ms-auto align-items-center">
+                        <button id="botonTema" class="btn btn-link text-light fs-4" title="Cambiar tema">
+                            <i class="bi bi-moon-stars-fill"></i> 
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- Título de la página -->
+            <h1>Home</h1>
+        </header>
+        <!-- Sección principal -->
+        <main class="container flex-grow-1"> 
+            <div class="container-fluid">
+                <div class="container">
+                    <!-- Título de la sección -->
+                    <h2>Listado de materias</h2>
+                    <!-- Tabla con clases de Bootstrap -->
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Materia</th>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Profesor</th>
+                            <th>Modalidad</th>
+                        </tr>
+                        <tr>
+                            <td>Arquitectura de Computadores</td>
+                            <td>Lunes</td>
+                            <td>18:30</td>
+                            <td>Leonardo Javier Prieto</td>
+                            <td>Virtual</td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas de Información I</td>
+                            <td>Martes</td>
+                            <td>18:30</td>
+                            <td>Marcelo Tadey</td>
+                            <td>Virtual</td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentos de Informática</td>
+                            <td>Miércoles</td>
+                            <td>18:30</td>
+                            <td>Guillermo Ramiro Maquieira</td>
+                            <td>Virtual</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing</td>
+                            <td>Jueves</td>
+                            <td>18:30</td>
+                            <td>Mónica Comesaña</td>
+                            <td>Virtual</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño y Desarrollo Web</td>
+                            <td>Viernes</td>
+                            <td>18:30</td>
+                            <td>Patricia Litovicius</td>
+                            <td>Virtual</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <img src="img/imagen5.jpg" class="img-fluid rounded my-5 w-100" alt="Imágen principal">
+
+                <div class="container">
+                    <!-- Título de la sección -->
+                    <h2>Otras páginas</h2>
+                    <!-- Fila de Bootstrap para organizar las columnas -->
+                    <div class="row">
+                        <!-- Primera columna con un card -->
+                        <div class="col mb-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5>Sobre mí</h5>
+                                  <p class="card-text">Presentación personal</p>
+                                  <a href="sobremi.html" class="btn" target="_blank">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda columna con un card -->
+                        <div class="col mb-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5>Contacto</h5>
+                                    <p class="card-text">Formulario de contacto</p>
+                                    <a href="contacto.html" class="btn" target="_blank">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tercera columna con un card -->
+                        <div class="col mb-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class>Materias</h5>
+                                    <p class="card-text">Listado de las materias</p>
+                                    <a href="materias.html" class="btn" target="_blank">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cuarta columna con un card -->
+                        <div class="col mb-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5>Avisos</h5>
+                                    <p class="card-text">Entregas y tareas pendientes.</p>
+                                    <a href="avisos.html" class="btn" target="_blank">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Final de la fila -->
+                </div> <!-- Final del contenedor de la sección -->
+            </div>     
+        </main>
+        <!-- Pie de página -->
+        <footer class="py-3 mt-3 flex-shrink-0">
+            <p>Desarrollada para Diseño y Desarrollo Web - 2025</p>
+            <p>Alumno: Lucía Herreros</p>
+        </footer>
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

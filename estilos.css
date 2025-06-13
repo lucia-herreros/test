@@ -1,0 +1,151 @@
+h1 {
+    color: #01447E;
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 20px 10px 10px 10px;
+    color: #E4785F;
+}
+
+h3 {
+    padding: 10px;
+    color: #01447E; 
+}
+
+h4 {
+    color: #E4785F;
+}
+
+h5 {
+    color: #01447E; 
+}
+
+nav {
+    background-color: #01447E;
+}
+
+.navbar-brand {
+    color: #ECBAA8;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #E4785F;
+}
+
+#activo {
+    color: #E4785F;
+}
+
+.menu {
+    color: #EBE9E1;
+}
+
+.menu:hover {
+    color: #E4785F;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #E4785F;
+}
+
+.enlace:hover {
+    color: #01447E;
+}
+
+.btn {
+    background-color: #E4785F;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #ECBAA8;
+    color: white;
+}
+
+.table th {
+    color: #E4785F;
+}
+
+footer {
+    background-color: #01447E;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo error formulario */
+
+.mensaje-error {
+    color: red;
+    font-size: small;
+}
+
+/* Estilo para modo oscuro */
+.modo-oscuro {
+    background-color: #0b1e3d;
+    color: #EBE9E1;
+}
+
+.modo-oscuro h1, 
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro h4,
+.modo-oscuro h5 {
+    color: #ECBAA8;
+}
+
+.modo-oscuro nav {
+    background-color: #022c5a;
+}
+
+.modo-oscuro footer {
+    color: #EBE9E1;
+    background-color: #022c5a;
+}
+
+.modo-oscuro li {
+    color: #EBE9E1;
+}
+
+.modo-oscuro .card {
+    background-color: #022c5a;
+    color: #EBE9E1;
+    border-color: #232c3a;
+}
+
+.modo-oscuro table,
+.modo-oscuro table td {
+    background-color: #022c5a;
+    color: #EBE9E1;
+    border-color: #232c3a;
+
+}
+
+.modo-oscuro table th {
+    background-color: #01447E; 
+    color: #E4785F;
+    border-color: #232c3a;
+}
+
+.modo-oscuro .list-group-item {
+  background-color: #01447E; 
+  color: #EBE9E1; 
+  border: 1px solid #232c3a; 
+}
+
+.modo-oscuro input[type="text"],
+.modo-oscuro textarea {
+    background-color: #022c5a;
+    color: #EBE9E1;
+    border: 1px solid #232c3a;
+}
+
+.modo-oscuro input[type="text"]::placeholder,
+.modo-oscuro textarea::placeholder {
+    color: #aaa;
+}
+

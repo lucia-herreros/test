@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icon.png" type="image/png">
+        <!-- Enlace al CSS de Bootstrap desde CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Uso una hoja de estilos personal para personalizar -->
+        <link rel="stylesheet" href="estilos.css">
+        <title>Sobre mí</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+            <!-- Barra de navegación responsive Bootstrap -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Cuatrimestre 2025</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-auto">
+                      <a class="nav-link menu" href="index.html">Home</a>
+                      <a class="nav-link menu" href="materias.html">Materias</a>
+                      <a class="nav-link menu" href="avisos.html">Avisos</a>
+                      <a class="nav-link active" id="activo" aria-current="page" href="sobremi.html">Sobre mí</a>
+                      <a class="nav-link menu" href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="d-flex ms-auto align-items-center">
+                        <button id="botonTema" class="btn btn-link text-light fs-4" title="Cambiar tema">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- Título de la página -->
+            <h1>Sobre mí</h1>
+        </header>
+        <main class="container flex-grow-1">
+            <!-- Contenido principal -->
+            <div class="container">
+                <!-- Usando Bootstrap para que la imágen sea responsive y limitar el espacio que ocupa -->
+                <img class="img-fluid rounded w-25 float-start me-3 mb-3" src="img/imagen1.jpg" alt="Foto Lucia">
+                <p>Mi nombre es Lucía Herreros. Tengo 25 años y soy estudiante de primer año de la carrera de Licenciatura en Gestión de Tecnologías de la Información en la UADE. Nací y actualmente vivo en Campana, Buenos Aires. Tengo un hermano y un sobrino de 5 años.</p>
+                <p>Esta es mi segunda carrera, estoy recibida de Traductora Científico-Literaria de la USAL. Siempre me interesó la tecnología y la programación, así que después de trabajar como traductora freelance un tiempo, decidí anotarme en esta carrera para poder aprender más y dedicarme a esto.</p>
+                <p>Además de estudiar esta carrera, estoy trabajando como administrativa en una institución que se dedica al cuidado de personas con discapacidad.</p>
+                <p>También estudio japonés y me gusta la literatura. Me gustan los libros de ficción y de no ficción. Mis libros favoritos del año hasta ahora son "Abigail" de Magda Szabó y "No Digas Nada" de Patrick Radden Keefe.</p>
+            </div>
+            <!-- Esto rompe el "float" de la imágen -->
+            <div class="clearfix"></div>
+        </main>
+        <footer class="py-3 mt-3 flex-shrink-0">
+          <p>Desarrollada para Diseño y Desarrollo Web - 2025</p>
+          <p>Alumno: Lucía Herreros</p>
+      </footer>
+      <!-- Script -->
+      <script src="script.js"></script>
+    </body>
+</html>
