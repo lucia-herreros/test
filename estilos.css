@@ -8,6 +8,7 @@ h1 {
 h2 {
     padding: 20px 10px 10px 10px;
     color: #E4785F;
+    font-weight: bold;
 }
 
 h3 {
@@ -50,11 +51,12 @@ nav {
 
 .enlace {
     text-decoration: none;
-    color: #E4785F;
+    color: #01447E;
+    font-weight: 500;
 }
 
 .enlace:hover {
-    color: #01447E;
+    color: #E4785F;
 }
 
 .btn {
@@ -64,7 +66,7 @@ nav {
 
 .btn:hover {
     background-color: #ECBAA8;
-    color: white;
+    color: #EBE9E1;
 }
 
 .table th {
@@ -73,14 +75,14 @@ nav {
 
 footer {
     background-color: #01447E;
-    color: white;
+    color: #EBE9E1;
     text-align: center;
 }
 
 /* Estilo error formulario */
 
 .mensaje-error {
-    color: red;
+    color: rgb(205, 10, 10);
     font-size: small;
 }
 
@@ -105,6 +107,16 @@ footer {
 .modo-oscuro footer {
     color: #EBE9E1;
     background-color: #022c5a;
+}
+
+.modo-oscuro .enlace {
+    text-decoration: none;
+    color: #E4785F;
+    font-weight: 500;
+}
+
+.enlace:hover {
+    color: #ECBAA8;
 }
 
 .modo-oscuro li {
