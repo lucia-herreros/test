@@ -73,6 +73,16 @@ nav {
     color: #E4785F;
 }
 
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
 footer {
     background-color: #01447E;
     color: #EBE9E1;
